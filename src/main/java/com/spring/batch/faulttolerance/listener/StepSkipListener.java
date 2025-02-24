@@ -13,12 +13,12 @@ import lombok.extern.log4j.Log4j2;
 @Log4j2
 public class StepSkipListener implements SkipListener<Customer, Number>
 {
-	/* private final ObjectMapper objectMapper;
+	 private final ObjectMapper objectMapper;
 	
 	public StepSkipListener(ObjectMapper objectMapper)
 	{
 	    this.objectMapper = objectMapper;
-	}*/
+	}
 
 	@Override // item reader
 	public void onSkipInRead(Throwable throwable)
@@ -37,7 +37,7 @@ public class StepSkipListener implements SkipListener<Customer, Number>
 	public void onSkipInProcess(Customer customer, Throwable throwable)
 	{
 		log.info("OnSkipInProcess method called");
-		log.info("Item {}  was skipped due to the exception  {}", new ObjectMapper().writeValueAsString(customer),
+		log.info("Item {}  was skipped due to the exception  {}", objectMapper.writeValueAsString(customer),
 				throwable.getMessage());
 	}
 }
