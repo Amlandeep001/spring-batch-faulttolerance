@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.spring.batch.faulttolerance</groupId>
-    <artifactId>spring-batch-faulttolerant</artifactId>
+    <artifactId>spring-batch-example</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring-batch-example</name>
     <description>Spring Batch demo project for implementing fault tolerance</description>
@@ -53,7 +53,7 @@
     </dependencies>
 
     <build>
-        <finalName>spring-batch-faulttolerant</finalName>
+        <finalName>spring-batch-faulttolerance</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
